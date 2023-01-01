@@ -26,7 +26,6 @@ header .container::after {
   transform: translateX(-50%);
   z-index: -1;
 }
-
 header .container .logo h1 {
   font-size: var(--sm-fs);
   font-weight: 700;
@@ -34,46 +33,38 @@ header .container .logo h1 {
   font-style: italic;
   color: var(--main-clr);
 }
-
 header .container .logo h1 a {
   display: block;
   margin-bottom: 3px;
 }
-
 header .container nav {
   flex: 1;
   justify-content: flex-end;
   align-items: center;
 }
-
 header .container nav .nav-btn {
   color: white;
   display: none;
 }
-
 header .container nav .links {
   display: flex;
 }
-
 header .container nav .links a {
   display: block;
   padding: var(--md-fs) 10px;
   text-transform: uppercase;
   transition: var(--animation-duration);
 }
-
 header .container nav .links a.active,
 header .container nav .links a:hover {
   color: var(--main-clr);
   border-bottom: 1px solid var(--main-clr);
 }
-
 header .container .search i {
   padding-left: var(--sm-padding);
   border-left: 2px solid var(--light-white);
   margin-left: var(--md-padding);
 }
-
 @media (max-width: 1199px) {
   header .container nav .links,
   header .container nav .search {
@@ -95,12 +86,11 @@ header .container .search i {
     padding: 15px 0;
   }
 }
-
 /* **************************** */
 /* ----------- Landing --------- */
 /* **************************** */
 .landing {
-  background-image: url(../images/landing-2.jpg);
+  background-image: url(../images/landing.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
