@@ -3,22 +3,21 @@
 *::after {
   box-sizing: border-box;
 }
-
 * {
   margin: 0;
   padding: 0;
   color: inherit;
   font-size: inherit;
 }
-
 a {
   text-decoration: none;
 }
-
 ul {
   list-style-type: none;
 }
-
 img {
   max-width: 100%;
+}
+html {
+  scroll-behavior: smooth;
 }

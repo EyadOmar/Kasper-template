@@ -63,11 +63,13 @@ header .container nav .links a:hover {
 header .container .search i {
   padding-left: var(--sm-padding);
   border-left: 2px solid var(--light-white);
-  margin-left: var(--md-padding);
+  margin-left: 20px;
 }
-@media (max-width: 1199px) {
-  header .container nav .links,
-  header .container nav .search {
+@media (max-width: 768px) {
+  header .container nav {
+    align-items: flex-end;
+  }
+  header .container nav .links {
     display: none;
   }
   header .container nav .nav-btn {
@@ -80,10 +82,10 @@ header .container .search i {
     top: 101%;
     left: 15px;
     width: calc(100% - 30px);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
   }
   header .container nav .nav-btn.active + ul li a {
-    padding: 15px 0;
+    padding: 15px 0 15px 20px;
   }
 }
 /* **************************** */
