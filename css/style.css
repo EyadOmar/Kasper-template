@@ -570,6 +570,12 @@ section.quote article p {
   border: 1px solid var(--main-clr);
   width: fit-content;
   margin-inline: auto;
+  transition: all var(--animation-duration);
+}
+.pricing .plans .plan a:hover {
+  background-color: var(--main-clr);
+  color: white;
+  border-color: transparent;
 }
 .pricing .contact-text {
   padding-top: var(--md-padding);
