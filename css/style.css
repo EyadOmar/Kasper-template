@@ -199,6 +199,12 @@ header .container .search i {
   background-repeat: no-repeat;
   min-height: 600px;
   position: relative;
+  overflow: hidden;
+}
+.design img {
+  position: absolute;
+  left: 8%;
+  bottom: -100px;
 }
 .design article {
   position: absolute;
@@ -224,6 +230,9 @@ header .container .search i {
   margin-right: var(--sm-padding);
 }
 @media (max-width: 767px) {
+  .design img {
+    display: none;
+  }
   .design article {
     width: 100%;
   }
