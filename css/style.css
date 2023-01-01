@@ -330,6 +330,9 @@ header .container .search i {
   display: flex;
   align-items: center;
 }
+.stats .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .stats .container {
   position: relative;
   display: flex;
@@ -339,7 +342,7 @@ header .container .search i {
 }
 .stats .container .box {
   padding: var(--md-padding);
-  background-color: var(--main-clr);
+  background-color: rgba(25, 200, 250, 0.4);
 }
 .stats .container .box i {
   width: 40px;
@@ -356,6 +359,9 @@ header .container .search i {
   font-size: var(--lg-fs);
   font-weight: bold;
   margin: 0 0 20px;
+}
+.stats .container .box p {
+  font-size: 14px;
 }
 @media (max-width: 767px) {
   .stats .container .box {
