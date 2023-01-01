@@ -480,11 +480,10 @@ header .container .search i {
   top: -33%;
 }
 /* **************************** */
-/* ----------- skills --------- */
+/* ----------- quote --------- */
 /* **************************** */
-
 section.quote {
-  background-image: url(../images/landing-1.jpg);
+  background-image: url(../images/quote.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -496,7 +495,6 @@ section.quote .container {
   justify-content: center;
   position: relative;
 }
-
 section.quote article {
   text-align: center;
   color: white;
@@ -511,40 +509,34 @@ section.quote article q {
 section.quote article p {
   color: white;
 }
-
 /* **************************** */
-/* ----------- skills --------- */
+/* ----------- plans --------- */
 /* **************************** */
 .pricing .plans {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
 }
-
 .pricing .plans .plan {
   background-color: #fcfcfc;
 
   text-align: center;
 }
-
 .pricing .plans .plan .head {
   padding: var(--md-padding) var(--sm-padding);
   border-top: 1px solid var(--main-clr);
   border-bottom: 1px solid var(--main-clr);
 }
-
 .pricing .plans .plan .head h3 {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 14px;
   margin-bottom: var(--sm-padding);
 }
-
 .pricing .plans .plan .head span {
   font-weight: bold;
   font-size: 5rem;
 }
-
 .pricing .plans .plan .head span::before {
   content: "$";
   position: relative;
@@ -560,22 +552,18 @@ section.quote article p {
   font-weight: normal;
   margin-left: 15px;
 }
-
 .pricing .plans .plan ul {
   border-bottom: 1px solid var(--main-clr);
   margin-bottom: var(--md-padding);
 }
-
 .pricing .plans .plan ul li {
   padding: var(--sm-padding);
   width: max-content;
   margin-inline: auto;
 }
-
 .pricing .plans .plan ul li:not(:last-of-type) {
   border-bottom: 1px solid var(--main-clr);
 }
-
 .pricing .plans .plan a {
   display: block;
   padding: 10px var(--md-padding);
@@ -583,14 +571,12 @@ section.quote article p {
   width: fit-content;
   margin-inline: auto;
 }
-
 .pricing .contact-text {
   padding-top: var(--md-padding);
   padding-bottom: var(--sm-padding);
   text-align: center;
   font-size: 2rem;
 }
-
 .pricing .contact-link {
   display: block;
   padding: 10px 40px;
@@ -599,32 +585,27 @@ section.quote article p {
   width: fit-content;
   margin-inline: auto;
 }
-
 /* **************************** */
-/* ----------- skills --------- */
+/* ----------- subscribe --------- */
 /* **************************** */
-
 .subscribe {
-  background-image: url(../images/landing-3.jpg);
+  background-image: url(../images/subscribe.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
 }
-
 .subscribe .container {
   position: relative;
   display: flex;
   align-items: center;
   color: white;
 }
-
 @media (max-width: 991px) {
   .subscribe .container {
     flex-direction: column;
   }
 }
-
 .subscribe .container form {
   display: flex;
   position: relative;
@@ -632,12 +613,10 @@ section.quote article p {
   max-width: 100%;
   flex: 1;
 }
-
 .subscribe form ::placeholder {
   color: white;
   text-transform: uppercase;
 }
-
 .subscribe .container form i {
   position: absolute;
   top: 49%;
@@ -664,11 +643,9 @@ section.quote article p {
 .subscribe .container form input[type="submit"]:focus {
   outline: none;
 }
-
 .subscribe .container p {
   margin-left: 50px;
 }
-
 @media (max-width: 991px) {
   .subscribe .container p {
     margin-left: 0;
@@ -676,25 +653,20 @@ section.quote article p {
     text-align: center;
   }
 }
-
 /* **************************** */
 /* ----------- contact --------- */
 /* **************************** */
-
 .contact .container .content {
   justify-content: space-between;
 }
-
 @media (max-width: 767px) {
   .contact .container .content {
     flex-direction: column-reverse;
   }
 }
-
 .contact .container .content form {
   flex-basis: 70%;
 }
-
 .contact .container .content form .main-input {
   display: block;
   border: 1px solid var(--light-white);
@@ -705,12 +677,10 @@ section.quote article p {
 .contact .container .content form .main-input:focus {
   outline: none;
 }
-
 .contact .container .content form textarea.main-input {
   height: 250px;
   overflow-y: auto;
 }
-
 .contact .container .content form input[type="submit"] {
   display: block;
   padding: 20px 40px;
@@ -720,13 +690,11 @@ section.quote article p {
   margin-left: auto;
   cursor: pointer;
 }
-
 @media (max-width: 767px) {
   .contact .container .content form input[type="submit"] {
     margin-inline: auto;
   }
 }
-
 .contact .container .content .info {
   flex-basis: 25%;
 }
@@ -736,7 +704,6 @@ section.quote article p {
     margin-bottom: var(--md-padding);
   }
 }
-
 .contact .container .content .info h4 {
   font-weight: normal;
   margin-bottom: var(--sm-padding);
@@ -747,11 +714,9 @@ section.quote article p {
   color: var(--light-white);
   margin-bottom: 10px;
 }
-
 .contact .container .content .info h4:last-of-type {
   margin-top: 8rem;
 }
-
 @media (max-width: 767px) {
   .contact .container .content .info h4:last-of-type {
     margin-top: var(--md-padding);
@@ -761,26 +726,23 @@ section.quote article p {
   color: var(--light-white);
   line-height: 1.8;
 }
-
 /* **************************** */
-/* ----------- contact --------- */
+/* ----------- footer --------- */
 /* **************************** */
 footer {
   padding-top: calc(var(--lg-padding) / 2);
   padding-bottom: calc(var(--lg-padding) / 2);
-  background-image: url(../images/landing-2.jpg);
+  background-image: url(../images/subscribe.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
 }
-
 footer .container {
   position: relative;
   text-align: center;
   color: white;
 }
-
 footer .container .logo h5 {
   font-size: var(--sm-fs);
   font-weight: 700;
@@ -789,12 +751,10 @@ footer .container .logo h5 {
   color: var(--main-clr);
   margin-bottom: 20px;
 }
-
 footer .container .social p {
   text-transform: uppercase;
   padding: 20px;
 }
-
 footer .container .social span {
   display: block;
   background-color: var(--main-clr);
@@ -802,7 +762,6 @@ footer .container .social span {
   width: 150px;
   margin-inline: auto;
 }
-
 footer .container .social .icons {
   color: white;
   padding: 20px;
@@ -810,11 +769,9 @@ footer .container .social .icons {
 footer .container .social .icons .icon:not(:last-of-type) {
   margin-right: 10px;
 }
-
 footer .container .trade-mark {
   margin-top: var(--lg-padding);
 }
-
 footer .container .trade-mark span {
   color: var(--main-clr);
 }
