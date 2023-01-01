@@ -97,7 +97,6 @@ header .container .search i {
   height: 100vh;
   position: relative;
 }
-
 .landing article {
   position: absolute;
   left: 0;
@@ -109,18 +108,15 @@ header .container .search i {
   padding: var(--lg-padding);
   justify-content: flex-end;
 }
-
 .landing article .content {
   max-width: 500px;
 }
-
 .landing article .content h2 {
   font-size: var(--md-fs);
   font-weight: normal;
   margin-bottom: var(--md-padding);
   text-transform: uppercase;
 }
-
 .landing .landing-arrows {
   position: absolute;
   color: white;
@@ -130,14 +126,12 @@ header .container .search i {
   transform: translateY(-50%);
   color: var(--light-white);
 }
-
 .landing .left-arrow {
   left: 30px;
 }
 .landing .right-arrow {
   right: 30px;
 }
-
 .landing .bullets {
   position: absolute;
   z-index: 2;
@@ -147,19 +141,16 @@ header .container .search i {
   display: flex;
   gap: 20px;
 }
-
 .landing .bullets li {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   border: 1px solid var(--light-white);
 }
-
 .landing .bullets li.active {
   background-color: var(--main-clr);
   border: 0;
 }
-
 @media (max-width: 767px) {
   .landing article {
     width: 100%;
@@ -171,21 +162,17 @@ header .container .search i {
     display: none;
   }
 }
-
 /* **************************** */
 /* ----------- Services --------- */
 /* **************************** */
-
 .services .content .card {
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--md-padding);
 }
-
 .services .content .card .icon {
   margin-top: var(--sm-padding);
 }
-
 @media (max-width: 767px) {
   .services .content .card {
     flex-direction: column;
@@ -202,19 +189,17 @@ header .container .search i {
     gap: var(--md-padding);
   }
 }
-
 /* **************************** */
-/* ----------- Services --------- */
+/* ----------- Design --------- */
 /* **************************** */
 .design {
-  background-image: url(../images/landing-3.jpg);
+  background-image: url(../images/design-features.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   min-height: 600px;
   position: relative;
 }
-
 .design article {
   position: absolute;
   right: 0;
@@ -226,22 +211,18 @@ header .container .search i {
   padding: var(--lg-padding);
   justify-content: flex-end;
 }
-
 .design article h3 {
   color: white;
   font-weight: normal;
   text-transform: uppercase;
   margin-bottom: var(--md-padding);
 }
-
 .design article ul li {
   margin-bottom: var(--sm-padding);
 }
-
 .design article .design-bullets {
   margin-right: var(--sm-padding);
 }
-
 @media (max-width: 767px) {
   .design article {
     width: 100%;
@@ -253,17 +234,14 @@ header .container .search i {
     font-size: 16px;
   }
 }
-
 /* **************************** */
 /* ----------- portfolio --------- */
 /* **************************** */
-
 .portfolio .content ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .portfolio .content ul li {
   padding: 10px 20px;
   transition: var(--animation-duration);
@@ -275,7 +253,6 @@ header .container .search i {
   background-color: var(--main-clr);
   color: white;
 }
-
 .portfolio .gallery {
   margin-top: var(--md-padding);
   display: flex;
@@ -283,21 +260,17 @@ header .container .search i {
   justify-content: center;
   align-items: center;
 }
-
 .portfolio .gallery figure {
   position: relative;
   overflow: hidden;
 }
-
 .portfolio .gallery figure img {
   transition: var(--animation-duration);
   cursor: pointer;
 }
-
 .portfolio .gallery figure:hover img {
   transform: rotate(2deg) scale(1.1);
 }
-
 .portfolio .gallery figure figcaption {
   position: absolute;
   bottom: -100px;
@@ -311,16 +284,13 @@ header .container .search i {
 .portfolio .gallery figure:hover figcaption {
   bottom: 0;
 }
-
 .portfolio .gallery figure figcaption h4 {
   font-weight: normal;
   margin-bottom: 5px;
 }
-
 .portfolio .gallery figure figcaption p {
   font-size: 14px;
 }
-
 .portfolio button {
   display: block;
   padding: 10px 40px;
@@ -329,7 +299,6 @@ header .container .search i {
   border: 0;
   margin: var(--md-padding) auto 0 auto;
 }
-
 @media (min-width: 768px) {
   .portfolio .gallery figure {
     flex-basis: 50%;
@@ -340,14 +309,12 @@ header .container .search i {
     flex-basis: 25%;
   }
 }
-
 @media (max-width: 767px) {
   .portfolio .content ul li {
     padding: 5px 10px;
     font-size: 16px;
   }
 }
-
 /* **************************** */
 /* ----------- About --------- */
 /* **************************** */
