@@ -201,7 +201,7 @@ header .container .search i {
   position: relative;
   overflow: hidden;
 }
-.design img {
+.design > img {
   position: absolute;
   left: 8%;
   bottom: -100px;
@@ -230,7 +230,7 @@ header .container .search i {
   margin-right: var(--sm-padding);
 }
 @media (max-width: 767px) {
-  .design img {
+  .design > img {
     display: none;
   }
   .design article {
@@ -326,6 +326,30 @@ header .container .search i {
 }
 /* **************************** */
 /* ----------- About --------- */
+@media (min-width: 992px) {
+  .about {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+  .about .section-title {
+    margin-bottom: 250px;
+  }
+  .about img {
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-57%);
+  }
+}
+@media (max-width: 991px) {
+  .about img {
+    display: none;
+  }
+}
+/* **************************** */
+/* **************************** */
+/* ----------- stats --------- */
 /* **************************** */
 .stats {
   background-image: url(../images/stats.png);
