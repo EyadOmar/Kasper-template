@@ -1,0 +1,129 @@
+:root {
+  --lg-fs: 6rem;
+  --md-fs: 2.6rem;
+  --sm-fs: 1.8rem;
+  --line-height: 1.8;
+
+  --lg-padding: 6rem;
+  --md-padding: 4rem;
+  --sm-padding: 2rem;
+
+  --light-white: #a2a2a2;
+  --main-clr: #19c8fa;
+  --transparent-clr: rgb(15 116 143 / 70%);
+
+  --animation-duration: 300ms;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--sm-fs);
+}
+
+article {
+  padding: var(--sm-padding);
+}
+
+section {
+  padding-block: var(--lg-padding);
+}
+
+article h3 {
+  padding-bottom: var(--sm-padding);
+  color: var(--main-clr);
+}
+
+article p {
+  color: var(--light-white);
+}
+
+p {
+  line-height: var(--line-height);
+}
+
+.container {
+  padding-inline: 1.5rem;
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 3rem;
+  justify-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+}
+
+.section-title {
+  text-align: center;
+  max-width: 550px;
+  margin-inline: auto;
+  padding: var(--sm-padding);
+  margin-bottom: 70px;
+}
+
+.section-title h2 {
+  font-size: var(--md-fs);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: var(--sm-padding);
+}
+
+.section-title span {
+  display: block;
+  background-color: black;
+  height: 1px;
+  width: 100px;
+  margin-inline: auto;
+  position: relative;
+}
+.section-title span::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section-title p {
+  color: var(--light-white);
+  padding-top: var(--sm-padding);
+  max-width: 100%;
+}
