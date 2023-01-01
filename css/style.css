@@ -330,7 +330,6 @@ header .container .search i {
   display: flex;
   align-items: center;
 }
-
 .stats .container {
   position: relative;
   display: flex;
@@ -338,12 +337,10 @@ header .container .search i {
   justify-content: center;
   align-items: center;
 }
-
 .stats .container .box {
   padding: var(--md-padding);
   background-color: var(--main-clr);
 }
-
 .stats .container .box i {
   width: 40px;
   height: 40px;
@@ -355,13 +352,11 @@ header .container .search i {
   border-radius: 50%;
   margin: 0 auto var(--sm-padding) auto;
 }
-
 .stats .container .box h3 {
   font-size: var(--lg-fs);
   font-weight: bold;
   margin: 0 0 20px;
 }
-
 @media (max-width: 767px) {
   .stats .container .box {
     flex-basis: 100%;
@@ -377,7 +372,6 @@ header .container .search i {
     flex-basis: 25%;
   }
 }
-
 /* **************************** */
 /* ----------- skills --------- */
 /* **************************** */
@@ -394,24 +388,20 @@ header .container .search i {
     flex-basis: 45%;
   }
 }
-
 .skills .container .section-title {
   margin-bottom: var(--md-padding);
 }
-
 .skills .testimonials .content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
-
 .skills .testimonials .content article {
   display: flex;
   gap: 0 40px;
   padding: 0;
 }
-
 @media (max-width: 767px) {
   .skills .testimonials .content article {
     gap: 40px 0;
@@ -419,32 +409,27 @@ header .container .search i {
     flex-direction: column;
   }
 }
-
 .skills .testimonials .content article img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
-
 .skills .testimonials .content article p {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--light-white);
   color: black;
   font-size: 16px;
 }
-
 .skills .testimonials .content article span {
   display: block;
   text-align: right;
   color: var(--light-white);
   font-size: 14px;
 }
-
 .skills .testimonials .content .bullets {
   display: flex;
   gap: 5px;
 }
-
 .skills .testimonials .content .bullets li {
   width: 15px;
   height: 15px;
@@ -452,25 +437,20 @@ header .container .search i {
   border-radius: 50%;
   background-color: white;
 }
-
 .skills .testimonials .content .bullets li.active {
   background-color: var(--main-clr);
   border: 0;
 }
-
 .skills .our-skills .prog-holder {
   margin-bottom: var(--md-padding);
 }
-
 .skills .our-skills .prog-holder h4 {
   font-weight: normal;
   margin-bottom: 10px;
 }
-
 .skills .our-skills .prog-holder .prog {
   background-color: var(--light-white);
 }
-
 .skills .our-skills .prog-holder .prog span {
   display: block;
   height: 30px;
@@ -499,7 +479,6 @@ header .container .search i {
   right: -11px;
   top: -33%;
 }
-
 /* **************************** */
 /* ----------- skills --------- */
 /* **************************** */
