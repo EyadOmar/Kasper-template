@@ -92,12 +92,16 @@ header .container .search i {
 /* ----------- Landing --------- */
 /* **************************** */
 .landing {
-  background-image: url(../images/landing.jpg);
-  background-position: center center;
+  background-color: var(--main-clr);
+  background-image: url("../images/landing-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 0;
   height: 100vh;
   position: relative;
+  overflow: hidden;
+  -webkit-transition: background-image 0.3s;
+  transition: background-image 0.3s;
 }
 .landing article {
   position: absolute;
@@ -127,6 +131,7 @@ header .container .search i {
   top: 50%;
   transform: translateY(-50%);
   color: var(--light-white);
+  cursor: pointer;
 }
 .landing .left-arrow {
   left: 30px;
@@ -142,6 +147,7 @@ header .container .search i {
   bottom: 30px;
   display: flex;
   gap: 20px;
+  cursor: pointer;
 }
 .landing .bullets li {
   width: 10px;
@@ -154,6 +160,9 @@ header .container .search i {
   border: 0;
 }
 @media (max-width: 767px) {
+  .landing {
+    background-position: center;
+  }
   .landing article {
     width: 100%;
   }

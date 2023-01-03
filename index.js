@@ -1,3 +1,4 @@
+//Header
 let navBtn = document.querySelector(".nav-btn");
 let navLinks = document.querySelectorAll("nav .links li a");
 navBtn.addEventListener("click", () => {
@@ -8,12 +9,60 @@ navLinks.forEach((link) => {
     navBtn.classList.toggle("active");
   });
 });
+
+//Landind
+let landing = document.querySelector(".landing");
+let landingImgs = [
+  "./images/landing-1.jpg",
+  "./images/landing-2.jpg",
+  "./images/landing-3.jpg",
+];
+let imgsNum = landingImgs.length;
+let currentImg = Math.round(imgsNum / 2) - 1;
+let bullets = document.querySelector(".landing .bullets");
+
+//Next and prevoius buttons
+let prev = document.querySelector(".left-arrow");
+let next = document.querySelector(".right-arrow");
+next.onclick = nextSlide;
+prev.onclick = prevSlide;
+
+//Bullets Indicating current picture
+for (let i = 0; i < imgsNum; i++) {
+  li = document.createElement("li");
+  bullets.appendChild(li);
+}
+let bulletsLis = document.querySelectorAll(".bullets li");
+bulletsLis.forEach((bullet, i) => {
+  bullet.addEventListener("click", () => {
+    if (i < currentImg) prevSlide();
+    else nextSlide();
+  });
+});
+bulletsLis[currentImg].classList.add("active");
+
+//portofolio
 //portofolio active filter
 let filters = document.querySelectorAll(".portfolio .filter li");
 switchActive(filters, ".portfolio .filter li.active");
 //portofolio active photo
 let figures = document.querySelectorAll(".portfolio .gallery figure");
 switchActive(figures, ".portfolio .gallery figure.active");
+
+function nextSlide() {
+  bulletsLis[currentImg].classList.remove("active");
+  currentImg += 1;
+  if (currentImg === imgsNum) currentImg = 0;
+  landing.style.backgroundImage = `url(${landingImgs[currentImg]})`;
+  bulletsLis[currentImg].classList.add("active");
+}
+function prevSlide() {
+  bulletsLis[currentImg].classList.remove("active");
+  currentImg -= 1;
+  if (currentImg === -1) currentImg = imgsNum - 1;
+  landing.style.backgroundImage = `url(${landingImgs[currentImg]})`;
+  bulletsLis[currentImg].classList.add("active");
+}
 function switchActive(elements, activeQuery) {
   elements.forEach((ele) => {
     ele.addEventListener("click", () => {
