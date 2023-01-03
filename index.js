@@ -1,4 +1,5 @@
 //Header
+//-----------
 let navBtn = document.querySelector(".nav-btn");
 let navLinks = document.querySelectorAll("nav .links li a");
 navBtn.addEventListener("click", () => {
@@ -11,6 +12,7 @@ navLinks.forEach((link) => {
 });
 
 //Landind
+//-----------
 let landing = document.querySelector(".landing");
 let landingImgs = [
   "./images/landing-1.jpg",
@@ -41,13 +43,35 @@ bulletsLis.forEach((bullet, i) => {
 });
 bulletsLis[currentImg].classList.add("active");
 
-//portofolio
+//Portofolio
+//-----------
 //portofolio active filter
 let filters = document.querySelectorAll(".portfolio .filter li");
 switchActive(filters, ".portfolio .filter li.active");
 //portofolio active photo
 let figures = document.querySelectorAll(".portfolio .gallery figure");
 switchActive(figures, ".portfolio .gallery figure.active");
+
+// add fig description
+let figCaptions = document.querySelectorAll(".portfolio .gallery figcaption");
+figures.forEach((fig, i) => {
+  const figType = fig.dataset.type;
+  const desc = document.createElement("p");
+  desc.textContent = figType;
+  figCaptions[i].appendChild(desc);
+});
+
+// filter images according filter
+filters.forEach((filter) => {
+  filter.addEventListener("click", filterFigure);
+});
+
+// if u press all u get all figures
+filters[0].addEventListener("click", () => {
+  figures.forEach((figure) => {
+    figure.classList.remove("shrink");
+  });
+});
 
 function nextSlide() {
   bulletsLis[currentImg].classList.remove("active");
@@ -71,5 +95,18 @@ function switchActive(elements, activeQuery) {
 
       ele.classList.add("active");
     });
+  });
+}
+function filterFigure(e) {
+  figures.forEach((figure) => {
+    // all appear
+    figure.classList.remove("shrink");
+
+    // match types of filter and image
+    const figureType = figure.dataset.type;
+    const filterType = e.target.dataset.type;
+
+    //Images that doesnot match shrink
+    if (figureType !== filterType) figure.classList.add("shrink");
   });
 }

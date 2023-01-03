@@ -283,6 +283,10 @@ header .container .search i {
 .portfolio .gallery figure {
   position: relative;
   overflow: hidden;
+  transition: flex-basis 0.5s;
+}
+.portfolio .gallery figure.shrink {
+  flex-basis: 0;
 }
 .portfolio .gallery figure img {
   transition: var(--animation-duration);
@@ -310,6 +314,7 @@ header .container .search i {
 }
 .portfolio .gallery figure figcaption p {
   font-size: 14px;
+  text-transform: capitalize;
 }
 .portfolio button {
   display: block;
